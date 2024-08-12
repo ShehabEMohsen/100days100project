@@ -51,7 +51,7 @@
     font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 1670px) {
+@media only screen and (max-width: 1670px) and (min-width: 1401px) {
     .testimonial-card{
         width: 25.4rem;
         height: 31.7rem;
@@ -59,45 +59,334 @@
         border-radius: 1.8rem;
     }
     .rating-area{
-        width: 50%;
-        height: 40%;
-        border-radius: 100%;
+        width: 40%;
+        height: 30%;
         border: solid #889D84 0.65rem;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        font-size: 5rem;
+        font-size: 4.3rem;
         color: #889D84;
     }
     .testimonial-text{
         margin-top: 2rem;
         width: 70%;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         color: #3E433D;
     }
     .user-area{
         display: flex;
         margin-top: 3rem;
         justify-content: space-between;
-        width: 35%;
+        width: 40%;
     }
     .image-area{
-        width: 4.5rem;
-        height: 4.5rem;
-        border-radius: 99px;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
         
     }
     .pfp{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 99px;
+        border-radius: 100%;
     }
     .user-name{
         display: flex;
         align-items: center;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) and (min-width: 1271px) {
+    .testimonial-card{
+        width: 23.4rem;
+        height: 29.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+    }
+    .rating-area{
+        width: 40%;
+        height: 30%;
+        border: solid #889D84 0.65rem;
+        font-size: 4.3rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 1.1rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        width: 40%;
+    }
+    .image-area{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+        
+    }
+    .pfp{
+        border-radius: 100%;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+  }
+  @media only screen and (max-width: 1270px) and (min-width: 1131px) {
+    .testimonial-card{
+        width: 20.4rem;
+        height: 26.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+    }
+    .rating-area{
+        width: 40%;
+        height: 30%;
+        border: solid #889D84 0.65rem;
+        font-size: 4.3rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 0.98rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 40%;
+    }
+    .image-area{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        
+    }
+    .pfp{
+        border-radius: 100%;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+  }
+  @media only screen and (max-width: 1130px) and (min-width: 1046px) {
+    .testimonial-card{
+        width: 18.4rem;
+        height: 24.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+    }
+    .rating-area{
+        width: 40%;
+        height: 30%;
+        border: solid #889D84 0.65rem;
+        font-size: 4.3rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 0.98rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 40%;
+    }
+    .image-area{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        
+    }
+    .pfp{
+        border-radius: 100%;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+  }
+  @media only screen and (max-width: 1045px) and (min-width: 981px) {
+    .testimonial-card{
+        width: 16.4rem;
+        height: 22.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+    }
+    .rating-area{
+        width: 35%;
+        height: 25%;
+        border: solid #889D84 0.45rem;
+        font-size: 3.3rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 0.88rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 45%;
+    }
+    .image-area{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        
+    }
+    .pfp{
+        border-radius: 100%;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 980px) and (min-width: 951px) {
+    .testimonial-card{
+        width: 16.4rem;
+        height: 22.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+    }
+    .rating-area{
+        width: 35%;
+        height: 25%;
+        border: solid #889D84 0.45rem;
+        font-size: 3.3rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 0.88rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 45%;
+    }
+    .image-area{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        
+    }
+    .pfp{
+        border-radius: 100%;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 950px) and (min-width: 900px) {
+    .testimonial-card{
+        width: 15.4rem;
+        height: 20.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+        padding-bottom: 1rem;
+    }
+    .rating-area{
+        width: 35%;
+        height: 35%;
+        border: solid #889D84 0.35rem;
+        font-size: 2.6rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 0.85rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 45%;
+    }
+    .image-area{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        
+    }
+    .pfp{
+        border-radius: 100%;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 899px) {
+    .testimonial-card{
+        width: 15.4rem;
+        height: 20.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+        padding-bottom: 1rem;
+    }
+    .rating-area{
+        width: 35%;
+        height: 35%;
+        border: solid #889D84 0.35rem;
+        font-size: 2.6rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 0.85rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 45%;
+    }
+    .image-area{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        
+    }
+    .pfp{
+        border-radius: 100%;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.8rem;
     }
   }

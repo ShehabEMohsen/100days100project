@@ -6,7 +6,9 @@ function App() {
     <div className="page">
       <TestimonialCard />
       <TestimonialCard />
-      <TestimonialCard />
+      <div className="hide">
+        <TestimonialCard />
+      </div>
     </div>
   );
 }
