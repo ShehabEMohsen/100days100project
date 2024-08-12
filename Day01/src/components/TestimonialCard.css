@@ -1,0 +1,103 @@
+.testimonial-card{
+    width: 31.75rem;
+    height: 39.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5625rem;
+    background-color: white;
+    border-radius: 2.25rem;
+}
+.rating-area{
+    width: 50%;
+    height: 40%;
+    border-radius: 100%;
+    border: solid #889D84 14px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: #889D84;
+}
+.testimonial-text{
+    margin-top: 2rem;
+    width: 70%;
+    font-size: 1.25rem;
+    color: #3E433D;
+}
+.user-area{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    width: 35%;
+}
+.image-area{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 99px;
+    
+}
+.pfp{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 99px;
+}
+.user-name{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1670px) {
+    .testimonial-card{
+        width: 25.4rem;
+        height: 31.7rem;
+        padding-top: 2.05rem;
+        border-radius: 1.8rem;
+    }
+    .rating-area{
+        width: 50%;
+        height: 40%;
+        border-radius: 100%;
+        border: solid #889D84 0.65rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        color: #889D84;
+    }
+    .testimonial-text{
+        margin-top: 2rem;
+        width: 70%;
+        font-size: 1.25rem;
+        color: #3E433D;
+    }
+    .user-area{
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        width: 35%;
+    }
+    .image-area{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 99px;
+        
+    }
+    .pfp{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 99px;
+    }
+    .user-name{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+  }
