@@ -1,7 +1,7 @@
 import "./App.css";
 import TestimonialCard from "./components/TestimonialCard";
 import Person from "./assets/person.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RightArrow from "./assets/Vector.png";
 
 const dataTestimonial = [
@@ -89,28 +89,46 @@ const dataTestimonial = [
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState("");
+  const [cardsToShow, setCardsToShow] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 900) {
+        setCardsToShow(2);
+      } else {
+        setCardsToShow(3);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleNext = () => {
     if (currentIndex + 3 < dataTestimonial.length) {
+      setDirection("next");
       setCurrentIndex(currentIndex + 3);
     }
   };
 
   const handlePrev = () => {
     if (currentIndex - 3 >= 0) {
+      setDirection("prev");
       setCurrentIndex(currentIndex - 3);
     }
   };
 
   return (
     <div className="page">
-      <div className="testimonial-area">
+      <div className={`testimonial-area ${direction}`}>
         {dataTestimonial
-          .slice(currentIndex, currentIndex + 3)
+          .slice(currentIndex, currentIndex + cardsToShow)
           .map((testimonial) => (
-            <div>
+            <div key={testimonial.id} className="testimonial-card-wrapper">
               <TestimonialCard
-                key={testimonial.id}
                 rating={testimonial.rating}
                 testimonial={testimonial.testimonial}
                 userName={testimonial.name}

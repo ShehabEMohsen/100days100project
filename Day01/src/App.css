@@ -11,13 +11,13 @@
 .testimonial-area{
   display: flex;
   justify-content: space-around;
-  transition: fade-in 0.5s ease;
+  transition: transform 0.7s ease-in-out;
   padding: 4rem;
 }
 .arrows-area{
   display: flex;
   justify-content: end;
-  margin-right: 9rem;
+  margin-right: 6.5rem;
   padding-bottom: 2rem;
 }
 .arrow{
@@ -39,6 +39,36 @@
   .page .hide{
     display: none;
    }
+}
+
+/* .testimonial-card-wrapper{
+  flex: 1;
+  min-width: 33%;
+  transition: transform 0.7s ease-in-out;
+} */
+
+.next .testimonial-card-wrapper{
+  animation: slideFromRight 0.5s forwards;
+}
+.prev .testimonial-card-wrapper{
+  animation: slideFromLeft 0.5s forwards;
+}
+
+@keyframes slideFromRight {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromLeft {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
 
 /* .logo {
