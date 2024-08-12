@@ -6,10 +6,34 @@
   max-height: 100vh;
 }
 .page{
+  background-color: #314F2D;
+}
+.testimonial-area{
   display: flex;
   justify-content: space-around;
-  background-color: #314F2D;
+  transition: fade-in 0.5s ease;
   padding: 4rem;
+}
+.arrows-area{
+  display: flex;
+  justify-content: end;
+  margin-right: 9rem;
+  padding-bottom: 2rem;
+}
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.5);
+  
+}
+.arrow button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.left-arrow-image{
+  transform: rotate(180deg);
 }
 @media only screen and (max-width: 899px) {
   .page .hide{

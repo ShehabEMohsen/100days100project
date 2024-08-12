@@ -2,20 +2,16 @@ import React from "react";
 import "./TestimonialCard.css";
 import Person from "../assets/person.png";
 
-export default function TestimonialCard() {
+export default function TestimonialCard(props: any) {
   return (
     <div className="testimonial-card">
-      <div className="rating-area">96</div>
-      <div className="testimonial-text">
-        Lorem ipsum dolor sit amet consectetur. Purus potenti feugiat aliquam
-        sollicitudin tellus fermentum. Amet laoreet eget enim donec tempor vel
-        varius quisque ac.
-      </div>
+      <div className="rating-area">{props.rating}</div>
+      <div className="testimonial-text">{props.testimonial}</div>
       <div className="user-area">
         <div className="image-area">
-          <img src={Person} className="pfp" />
+          <img src={props.image} className="pfp" />
         </div>
-        <div className="user-name">John Doe</div>
+        <div className="user-name">{props.userName}</div>
       </div>
     </div>
   );
