@@ -1,0 +1,38 @@
+.subscription-card{
+    background-color: #ffffff;
+    width: 25.75rem;
+    height: 21.875rem;
+    border-radius: .625rem;
+    padding: 3rem;
+    text-align: start;
+    position: relative;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease;
+}
+.subscription-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.subscription-price{
+    font-size: .9375rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.subscription-desc{
+    font-size: .975rem;
+    color: #787C77;
+    text-align: start;
+    margin-bottom: 3rem;
+}
+.subscription-button{
+    border: solid black .125rem;
+    border-radius: .4375rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
