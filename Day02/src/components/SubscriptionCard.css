@@ -5,13 +5,13 @@
     border-radius: .625rem;
     padding: 3rem;
     text-align: start;
-    position: relative;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease;
+    
 }
 .subscription-title{
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+    
 }
 .subscription-price{
     font-size: .9375rem;
@@ -35,4 +35,32 @@
 a{
     text-decoration: none;
     color: black;
+}
+.animation{
+    animation: animationout 0.5s ease;
+}
+.animation2{
+    animation: animationin 0.5s ease;
+}
+@keyframes animationin{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animationout{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

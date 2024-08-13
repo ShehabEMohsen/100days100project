@@ -56,10 +56,13 @@ const CardData = [
 
 function App() {
   const [chosenType, setChosenType] = useState("month");
+  const [animationType, setAnimationType] = useState("month");
 
   const handleToggleChange = (value: any) => {
-    setChosenType(value ? "year" : "month");
-    console.log(value);
+    setAnimationType(value ? "year" : "month");
+    setTimeout(() => {
+      setChosenType(value ? "year" : "month");
+    }, 250);
   };
   return (
     <div>
@@ -76,6 +79,7 @@ function App() {
             price={Card.price}
             desc={Card.description}
             type={Card.type}
+            animation={animationType}
           />
         ))}
       </div>

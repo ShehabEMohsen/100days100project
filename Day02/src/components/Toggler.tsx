@@ -1,4 +1,3 @@
-import React from "react";
 import "./Toggler.css";
 
 export default function Toggler({ onToggleChange }: any) {
