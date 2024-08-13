@@ -65,7 +65,7 @@ function App() {
     }, 250);
   };
   return (
-    <div>
+    <div className="whole-page">
       <div className="page-title">Choose Your Plan</div>
       <div className="toggler">
         <Toggler onToggleChange={handleToggleChange} />

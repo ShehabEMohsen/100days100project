@@ -19,7 +19,7 @@ export default function Toggler({ onToggleChange }: any) {
           data-off="Monthly"
           data-on="Annually"
           htmlFor="color_mode"
-        ></label>
+        />
       </label>
     </div>
   );
