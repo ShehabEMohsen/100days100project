@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import Socials from "./components/Socials";
 
 function App() {
   return (
-    <div>
-      <button></button>
+    <div className="whole-page">
+      <Socials />
     </div>
   );
 }
