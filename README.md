@@ -1,8 +1,11 @@
-#Day01 (Testimonials Cards)
-![Project Preview](assets/testimonials.png)
+## Day01 (Testimonials Cards)
 
-#Day02 (Subscription Cards)
-![Project Preview](assets/subscription.gif)
+<img src="assets/testimonials.png" alt="drawing" style="max-height:400px;"/>
 
-#Day01 (Socials)
-![Project Preview](assets/socials.gif)
+## Day02 (Subscription Cards)
+
+<img src="assets/subscription.gif" alt="drawing" style="max-height:400px;"/>
+
+## Day01 (Socials)
+
+<img src="assets/socials.gif" alt="drawing" style="max-height:400px;"/>
