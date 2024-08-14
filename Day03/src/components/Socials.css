@@ -9,6 +9,14 @@
     height: 8rem;
     /* width: 8rem; */
   }
+  .container.open {
+	/* min-width: 55.875rem;
+    width: 50.875rem; */
+    height: 20%;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 999999px;
+}
 .container a{
 	border-radius: 50%;
 	font-size: 26px;
@@ -34,14 +42,7 @@
 .container.open .share-btn{
     display: none;
 }
-.container.open {
-	/* min-width: 55.875rem;
-    width: 50.875rem; */
-    height: 20%;
-    justify-content: space-around;
-    background-color: white;
-    border-radius: 999999px;
-}
+
 .container.open a{
     opacity: 1;
     position: static;
