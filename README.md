@@ -6,6 +6,6 @@
 
 <img src="assets/subscription.gif" alt="drawing" style="max-height:400px;"/>
 
-## Day01 (Socials)
+## Day03 (Socials)
 
 <img src="assets/socials.gif" alt="drawing" style="height:100%"/>
