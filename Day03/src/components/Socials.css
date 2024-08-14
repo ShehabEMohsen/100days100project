@@ -54,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .twitter-btn img{
     /* background-color: black; */
@@ -68,18 +69,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .facebook-btn img{
     width: 160%;
 }
 .container.open .close-btn {
-    background-color: rgb(100, 5, 5);
+    background-color: #282C37;
     border-radius: 100%;
     width: 6rem;
     height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .container.open .instagram-btn{
     background-color: purple;
@@ -89,6 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .container.open .linkedin-btn{
     background-color: #0B65C3;
@@ -99,7 +103,7 @@
     justify-content: center;
     align-items: center;
     opacity: 1;
-    
+    cursor: pointer;
 }
 .linkedin-btn img{
     width: 160%;

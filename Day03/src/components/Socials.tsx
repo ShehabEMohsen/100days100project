@@ -18,10 +18,12 @@ export default function Socials() {
     setIsOpened(false);
   };
   return (
-    <div className={`container ${isOpened ? "open" : ""}`} onClick={handleOpen}>
-      <button className="share-btn">
-        <img src={Share} />
-      </button>
+    <div className={`container ${isOpened ? "open" : ""}`}>
+      <div className="share-btn" onClick={handleOpen}>
+        <button className="share-btn">
+          <img src={Share} />
+        </button>
+      </div>
       <div className="twitter-div">
         <a>
           <img src={Twitter} />
