@@ -12,7 +12,7 @@ export default function Socials() {
   const [isOpened, setIsOpened] = useState(false);
 
   const handleOpen = () => {
-    setIsOpened(true);
+    setIsOpened(!isOpened);
   };
   const handleClose = () => {
     setIsOpened(false);
@@ -22,23 +22,31 @@ export default function Socials() {
       <button className="share-btn">
         <img src={Share} />
       </button>
-      <a className="twitter-btn">
-        <img src={Twitter} />
-      </a>
-      <a className="facebook-btn">
-        <img src={Facebook} />
-      </a>
-      <div onClick={handleClose}>
-        <a className="close-btn">
+      <div className="twitter-div">
+        <a>
+          <img src={Twitter} />
+        </a>
+      </div>
+      <div className="facebook-btn">
+        <a>
+          <img src={Facebook} />
+        </a>
+      </div>
+      <div className="close-btn" onClick={isOpened ? handleClose : () => {}}>
+        <a>
           <img src={Close} />
         </a>
       </div>
-      <a className="instagram-btn">
-        <img src={Instagram} />
-      </a>
-      <a className="linkedin-btn">
-        <img src={LinkedIn} />
-      </a>
+      <div className="instagram-btn">
+        <a>
+          <img src={Instagram} />
+        </a>
+      </div>
+      <div className="linkedin-btn">
+        <a>
+          <img src={LinkedIn} />
+        </a>
+      </div>
     </div>
   );
 }
