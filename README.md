@@ -8,4 +8,4 @@
 
 ## Day01 (Socials)
 
-<img src="assets/socials.gif" alt="drawing" style="max-height:400px;"/>
+<img src="assets/socials.gif" alt="drawing" style="height:100%"/>
