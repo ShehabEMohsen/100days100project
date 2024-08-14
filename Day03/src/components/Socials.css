@@ -7,7 +7,7 @@
     position: relative;
     transition: 0.4s ease;
     height: 8rem;
-    width: 8rem;
+    /* width: 8rem; */
   }
 .container a{
 	border-radius: 50%;
@@ -35,7 +35,8 @@
     display: none;
 }
 .container.open {
-	width: 50%;
+	/* min-width: 55.875rem;
+    width: 50.875rem; */
     height: 20%;
     justify-content: space-around;
     background-color: white;

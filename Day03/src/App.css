@@ -9,14 +9,14 @@
   max-height: 100vh;
 } */
 
-body, html{
+/* body, html{
   background-color: #E9E9E8;
-}
+} */
 .whole-page{
   background-color: #e0e0e0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 95vh;
 	margin: 0;
 }

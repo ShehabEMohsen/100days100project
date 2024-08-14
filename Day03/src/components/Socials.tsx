@@ -18,7 +18,14 @@ export default function Socials() {
     setIsOpened(false);
   };
   return (
-    <div className={`container ${isOpened ? "open" : ""}`}>
+    <div
+      className={`container ${isOpened ? "open" : ""}`}
+      style={{
+        transition: "all",
+        transitionDuration: "0.5s",
+        width: `${!isOpened ? "8rem" : "55.875rem"}`,
+      }}
+    >
       <div className="share-btn" onClick={handleOpen}>
         <button className="share-btn">
           <img src={Share} />
