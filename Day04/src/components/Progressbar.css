@@ -1,3 +1,11 @@
+.container{
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 .progress-container{
     width: 50%;
     display: flex;
@@ -8,9 +16,9 @@
     position: absolute;
     height: 4px;
     width: 100%;
-    background-color: black;
+    background-color: lightslategray;
     border: none;
-    z-index: -1;
+    z-index: 0;
     margin: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -21,17 +29,19 @@
     width: 0%;
     background-color: green;
     border: none;
-    z-index: -1;
+    z-index: 0;
     margin: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.4s linear width;
 }
 .step{
     width: 30px;
     height: 30px;
     background-color: white;
-    border: 100%;
+    border-radius: 99999px;
     display: flex;
+    z-index: 2;
     justify-content: center;
     align-items: center;
     border: 4px solid lightslategray;
@@ -40,6 +50,8 @@
 .step.checked{
     color: green;
     border-color: green;
+    transition: all 0.5s linear;
+    transition-delay: 0.4s;
 }
 .step.checked small{
     position: absolute;
@@ -49,10 +61,13 @@
     background-color: violet;
     border: none;
     color: white;
-    padding: 10px 10px;
+    padding: 10px 25px;
     cursor: pointer;
     border-radius: 5px;
 }
 .nav-btn:hover{
     opacity: 0.8;
+}
+.nav-btn:disabled{
+    background-color: grey;
 }
