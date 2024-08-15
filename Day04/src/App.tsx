@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Socials from "./components/Socials";
+import Progressbar from "./components/Progressbar";
 
 function App() {
   return (
     <div className="whole-page">
-      <Socials />
+      <Progressbar />
     </div>
   );
 }
