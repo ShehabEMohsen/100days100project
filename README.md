@@ -9,3 +9,7 @@
 ## Day03 (Socials)
 
 <img src="assets/socials.gif" alt="drawing" style="height:100%"/>
+
+## Day04 (Progress Bar)
+
+<img src="assets/progress.gif" alt="drawing" style="height:100%"/>
