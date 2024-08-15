@@ -39,10 +39,18 @@ export default function Progressbar() {
           display: "flex",
         }}
       >
-        <button onClick={handleProgressClickPrev} className="nav-btn">
+        <button
+          onClick={handleProgressClickPrev}
+          className="nav-btn"
+          disabled={progress == 1}
+        >
           -
         </button>
-        <button onClick={handleProgressClickNext} className="nav-btn">
+        <button
+          onClick={handleProgressClickNext}
+          className="nav-btn"
+          disabled={progress == 5}
+        >
           +
         </button>
       </div>
