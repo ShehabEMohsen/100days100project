@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Skillbar.css";
+
 export default function Skillbar() {
   return (
     <div className="skill-bar">
@@ -23,7 +25,7 @@ export default function Skillbar() {
         <div className="percent">
           <span>Javascript</span>
         </div>
-        <div className="progress-line JS">
+        <div className="progress-line js">
           <span></span>
         </div>
       </div>

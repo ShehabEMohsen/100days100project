@@ -1,0 +1,122 @@
+.skill-bar{
+    min-width: 31.25rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.875rem;
+    padding: 1.5625rem 1.875rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.skill-bar .bar{
+    margin: 1.25rem 0;
+}
+.skill-bar .bar:first-child{
+    margin-top: 0;
+}
+.skill-bar .bar .info span{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: .3125rem;
+}
+.skill-bar .bar .html span{
+    width: 90%;
+    animation: width90 0.5s ease;
+}
+.skill-bar .bar .css span{
+    width: 80%;
+    animation: width80 0.5s ease;
+}
+.skill-bar .bar .js span{
+    width: 50%;
+    animation: width50 0.5s ease;
+}
+.skill-bar .bar .react span{
+    width: 70%;
+    animation: width70 0.5s ease;
+}
+.skill-bar .bar .vue span{
+    width: 85%;
+    animation: width85 0.5s ease;
+}
+
+.skill-bar .bar .progress-line{
+    position: relative;
+    height: .75rem;
+    width: 100%;
+    background: #f0f0f0;
+    box-shadow: 0px 1px 1px 1px rbga(0,0,0,0.5), 0px, 1px rgba(255,255,255,0.8);
+    border-radius: .625rem;
+}
+.skill-bar .bar .progress-line span{
+    height: 100%;
+    background: #6665ee;
+    position: absolute;
+    border: .625rem;
+    
+}
+.skill-bar .bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -1.875rem;
+    color:white;
+    font-size: .625rem;
+    font-weight: 500;
+    background: black;
+    padding: .0625rem .5rem;
+    border-radius: .1875rem;
+}
+.skill-bar .bar .html span::after{
+    content: '90%';
+}
+.skill-bar .bar .css span::after{
+    content: '80%';
+}
+.skill-bar .bar .js span::after{
+    content: '50%';
+}
+.skill-bar .bar .react span::after{
+    content: '70%';
+}
+.skill-bar .bar .vue span::after{
+    content: '85%';
+}
+
+@keyframes width90{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes width80{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes width50{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes width70{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes width85{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
