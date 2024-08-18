@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Skillbar from "./components/Skillbar";
+import RPS from "./components/RPS";
 
 function App() {
   return (
     <div className="whole-page">
-      <Skillbar />
+      <RPS />
     </div>
   );
 }

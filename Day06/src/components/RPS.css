@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.sub-title{
+    font-size: 3rem;
+    margin-top: 6rem;
+}
+.choices{
+    width: 50%;
+}
+.choices ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+    list-style: none;
+}
+.choices ul li{
+    width: 5.125rem;
+    height: 5.125rem;
+    background-color: red;
+}
+.result{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.scores{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
