@@ -13,7 +13,9 @@
     margin-top: 6rem;
 }
 .choices{
-    width: 50%;
+    width: 100%;
+    margin-top: 6%;
+    cursor: pointer;
 }
 .choices ul{
     display: flex;
@@ -23,9 +25,16 @@
     list-style: none;
 }
 .choices ul li{
-    width: 5.125rem;
-    height: 5.125rem;
-    background-color: red;
+    width: 10.125rem;
+    height: 10.125rem;
+    background-color: rgba(255,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.875rem;
+}
+.choices ul li img {
+    transform: scale(0.7);
 }
 .result{
     font-size: 3rem;

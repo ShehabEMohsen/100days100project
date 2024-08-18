@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./RPS.css";
+import Rock from "../assets/rock.svg";
+import Paper from "../assets/paper.svg";
+import Scissors from "../assets/scissors.svg";
 
 export default function RPS() {
   const [playerChoice, setPlayerChoice] = useState("");
@@ -42,9 +45,15 @@ export default function RPS() {
       <div className="sub-title">Make your choice</div>
       <div className="choices">
         <ul>
-          <li onClick={() => setPlayerChoice("rock")}>Rock</li>
-          <li onClick={() => setPlayerChoice("paper")}>Paper</li>
-          <li onClick={() => setPlayerChoice("scissors")}>Scissors</li>
+          <li className="rock" onClick={() => setPlayerChoice("rock")}>
+            <img src={Rock} />
+          </li>
+          <li className="paper" onClick={() => setPlayerChoice("paper")}>
+            <img src={Paper} />
+          </li>
+          <li className="scissors" onClick={() => setPlayerChoice("scissors")}>
+            <img src={Scissors} />
+          </li>
         </ul>
       </div>
       <div className="result">{result}</div>
