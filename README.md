@@ -13,3 +13,11 @@
 ## Day04 (Progress Bar)
 
 <img src="assets/progress.gif" alt="drawing" style="height:100%"/>
+
+## Day05 (Progression tracker)
+
+<img src="assets/progression.png" alt="drawing" style="height:100%"/>
+
+## Day06 (Rock Paper Scissors)
+
+<img src="assets/rps.png" alt="drawing" style="height:100%"/>
