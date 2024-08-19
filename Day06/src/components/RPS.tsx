@@ -45,13 +45,49 @@ export default function RPS() {
       <div className="sub-title">Make your choice</div>
       <div className="choices">
         <ul>
-          <li className="rock" onClick={() => handleChoice("rock")}>
+          <li
+            className="rock"
+            onClick={() => handleChoice("rock")}
+            style={{
+              backgroundColor: `${
+                result.includes("lost")
+                  ? "rgba(255,0,0,0.9)"
+                  : result.includes("win")
+                  ? "rgba(15,173,0,0.8)"
+                  : "rgba(255,147,0,0.8)"
+              }`,
+            }}
+          >
             <img src={Rock} />
           </li>
-          <li className="paper" onClick={() => handleChoice("paper")}>
+          <li
+            className="paper"
+            onClick={() => handleChoice("paper")}
+            style={{
+              backgroundColor: `${
+                result.includes("lost")
+                  ? "rgba(255,0,0,0.9)"
+                  : result.includes("win")
+                  ? "rgba(15,173,0,0.8)"
+                  : "rgba(255,147,0,0.8)"
+              }`,
+            }}
+          >
             <img src={Paper} />
           </li>
-          <li className="scissors" onClick={() => handleChoice("scissors")}>
+          <li
+            className="scissors"
+            onClick={() => handleChoice("scissors")}
+            style={{
+              backgroundColor: `${
+                result.includes("lost")
+                  ? "rgba(255,0,0,0.9)"
+                  : result.includes("win")
+                  ? "rgba(15,173,0,0.8)"
+                  : "rgba(255,147,0,0.8)"
+              }`,
+            }}
+          >
             <img src={Scissors} />
           </li>
         </ul>
