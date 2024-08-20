@@ -5,6 +5,9 @@ import QuoteCard from "./components/QuoteCard";
 function App() {
   return (
     <div className="whole-page">
+      <div className="title">
+        <span>Random</span> Quoter
+      </div>
       <div className="card">
         <QuoteCard />
       </div>

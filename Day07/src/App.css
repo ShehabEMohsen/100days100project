@@ -14,8 +14,18 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100vh;
   /* min-width: 800px */
+}
+.title{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+.title span{
+  color: #235c70;
 }
 .card{
   display: flex;
