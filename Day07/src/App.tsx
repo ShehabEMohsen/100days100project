@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import RPS from "./components/RPS";
+import QuoteCard from "./components/QuoteCard";
 
 function App() {
   return (
     <div className="whole-page">
-      <RPS />
+      <div className="card">
+        <QuoteCard />
+      </div>
     </div>
   );
 }
