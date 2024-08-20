@@ -21,3 +21,7 @@
 ## Day06 (Rock Paper Scissors)
 
 <img src="assets/rps.png" alt="drawing" style="height:100%"/>
+
+## Day07 (Random Quote Generator)
+
+<img src="assets/quotes.gif" alt="drawing" style="height:100%"/>
