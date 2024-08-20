@@ -9,6 +9,7 @@ export default function QuoteCard() {
   });
 
   const [isAnimate, setIsAnimate] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
   const getQuote = () => {
     setIsAnimate(false);
@@ -17,6 +18,15 @@ export default function QuoteCard() {
       setQuoteData({ content, author });
     });
     setTimeout(() => setIsAnimate(true), 20);
+  };
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(quoteData.content);
+    setIsCopied(true);
+
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -35,15 +45,14 @@ export default function QuoteCard() {
       </div>
       <div className="buttons-area">
         <div className="copy-button">
-          <button
-            onClick={() => navigator.clipboard.writeText(quoteData.content)}
-          >
-            Copy
-          </button>
+          <button onClick={handleCopy}>Copy</button>
         </div>
         <div className="generate-button">
           <button onClick={getQuote}>Generate Quote</button>
         </div>
+      </div>
+      <div className={`snackbar ${isCopied ? "show" : ""}`}>
+        Quote copied to clipboard
       </div>
     </div>
   );

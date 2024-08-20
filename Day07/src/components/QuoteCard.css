@@ -56,6 +56,30 @@
 .animation{
     animation: animate 0.5s ease;
 }
+.snackbar {
+    visibility: hidden;
+    min-width: 300px;
+    background-color: #3587A4;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 42%;
+    bottom: 0;
+    font-size: 1.0625rem;
+    transition: visibility 0s, opacity 0,5s ease-in-out;
+    opacity: 0;
+}
+.snackbar.show{
+    visibility: visible;
+    animation: slide-up-down 3s ease forwards;
+}
+.snackbar.hide{
+    opacity: 0;
+    transition: visibility 0s, opacity 0,5s ease-in-out;
+}
 @keyframes animate{
     0%{
         opacity:1
@@ -64,5 +88,32 @@
     }
     100%{
         opacity: 1;
+    }
+}
+@keyframes slide-up-down{
+    0%{
+        opacity: 0;
+        bottom: 0;
+    }
+    10%{
+        opacity: 1;
+        bottom: 40px;
+    }
+    20%{
+        opacity: 1;
+        bottom: 30px;
+
+    }
+    80%{
+        opacity: 1;
+        bottom: 30px;
+    }
+    90%{
+        opacity: 1;
+        bottom:40px;
+    }
+    100%{
+        opacity: 0;
+        bottom: 0;
     }
 }
