@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-height: 100vh;
+} */
+
+body, html{
+  background-color: #C1DFF0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  /* min-width: 800px */
+}
+.title{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+.title span{
+  color: #235c70;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* .whole-page{
+  background-color: #e0e0e0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+	margin: 0;
+} */
