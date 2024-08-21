@@ -10,27 +10,18 @@
 } */
 
 body, html{
-  background-color: #C1DFF0;
+  background-color: #161416;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /* min-width: 800px */
 }
 .title{
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  margin-top: -2rem;
-}
-.title span{
-  color: #235c70;
-}
-.card{
-  display: flex;
-  justify-content: center;
-  z-index: 1000;
+  color: #ffffff;
+  font-size: 5rem;
 }
 
 /* .whole-page{
