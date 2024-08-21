@@ -25,3 +25,7 @@
 ## Day07 (Random Quote Generator)
 
 <img src="assets/quotes.gif" alt="drawing" style="height:100%"/>
+
+## Day08 (Rotating Card)
+
+<img src="assets/rotatingCard.gif" alt="drawing" style="height:100%"/>
