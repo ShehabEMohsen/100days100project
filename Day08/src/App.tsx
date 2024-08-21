@@ -1,16 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import QuoteCard from "./components/QuoteCard";
+import RotatingCard from "./components/RotatingCard";
 
 function App() {
   return (
     <div className="whole-page">
-      <div className="title">
-        <span>Random</span> Quoter
-      </div>
-      <div className="card">
-        <QuoteCard />
-      </div>
+      <div className="title">Rotating Card</div>
+      <RotatingCard />
     </div>
   );
 }
