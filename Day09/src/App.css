@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-height: 100vh;
+} */
+
+body, html{
+  background-color: #161416;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* min-width: 800px */
+}
+.title{
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+/* .whole-page{
+  background-color: #e0e0e0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+	margin: 0;
+} */
