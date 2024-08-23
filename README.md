@@ -29,3 +29,7 @@
 ## Day08 (Rotating Card)
 
 <img src="assets/rotatingCard.gif" alt="drawing" style="height:100%"/>
+
+## Day09 (FAQ)
+
+<img src="assets/FAQ.png" alt="drawing" style="height:100%"/>
