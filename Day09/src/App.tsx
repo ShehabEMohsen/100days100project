@@ -1,12 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import RotatingCard from "./components/RotatingCard";
+import Questions from "./components/Questions";
 
 function App() {
   return (
-    <div className="whole-page">
-      <div className="title">Rotating Card</div>
-      <RotatingCard />
+    <div>
+      <Questions />
     </div>
   );
 }
