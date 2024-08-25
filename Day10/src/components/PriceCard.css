@@ -68,7 +68,7 @@
     width: 18%;
     margin-left: auto;
 }
-.share-button, .save-button{
+.share-button, .save-button, .done-button{
     background-color: #d8d6d6;
     width: 40px;
     height: 40px;
@@ -77,6 +77,24 @@
     justify-content: center;
     border-radius:50%;
     cursor: pointer;
+}
+.save-button{
+    background-image: url('../assets/mdi_cart-outline.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.done-button{
+    background-image: url('../assets/ic_round-done-outline.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.done-button:hover{
+    background-image: url('../assets/line-md_remove.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
 }
 .product-name{
     font-size: 1.6rem;
@@ -117,4 +135,48 @@
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     transition: all 0.3s ease-in-out;
+}
+.snackbar{
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+    background-color: #A6CDDE;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid #a6acde
+}
+.snackbar.show{
+    visibility: visible;
+    animation: slide-up-down 3s ease forwards;
+}
+.snackbar.hide{
+    opacity: 0;
+    transition: visibility 0s, opacity 0,5s ease-in-out;
+}
+@keyframes slide-up-down{
+    0%{
+        opacity: 0;
+        bottom: 0;
+    }
+    10%{
+        opacity: 1;
+        bottom: 40px;
+    }
+    20%{
+        opacity: 1;
+        bottom: 30px;
+
+    }
+    80%{
+        opacity: 1;
+        bottom: 30px;
+    }
+    90%{
+        opacity: 1;
+        bottom:40px;
+    }
+    100%{
+        opacity: 0;
+        bottom: 0;
+    }
 }

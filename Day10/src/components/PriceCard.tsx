@@ -10,6 +10,7 @@ import Done from "../assets/ic_round-done-outline.svg";
 
 export default function PriceCard() {
   const [isAdded, setIsAdded] = useState(false);
+  const [isShown, setIsShown] = useState(false);
   return (
     <div className="product-card">
       <div className="top-area">
@@ -30,37 +31,23 @@ export default function PriceCard() {
           <div className="share-button">
             <img src={Share} />
           </div>
-          {!isAdded ? (
-            <div
-              className="save-button"
-              onClick={() => {
-                setIsAdded(!isAdded);
-              }}
-            >
-              <img src={Cart} />
-            </div>
-          ) : (
-            <div
-              className="save-button"
-              onClick={() => {
-                setIsAdded(!isAdded);
-              }}
-            >
-              <img src={Done} />
-            </div>
-          )}
-        </div>
-      </div>
-      {!isAdded ? (
-        <div className="price-reviews">
-          <div className="price">$50.00</div>
-          <div className="reviews">
-            <img src={Star} /> 4.9 (324 reviews)
+
+          <div
+            className={`${isAdded ? "save-button" : "done-button"}`}
+            onClick={() => {
+              setIsAdded(!isAdded);
+            }}
+          >
+            {/* <img src={Cart} /> */}
           </div>
         </div>
-      ) : (
-        <div className="added-area">Added to Cart</div>
-      )}
+      </div>
+      <div className="price-reviews">
+        <div className="price">$50.00</div>
+        <div className="reviews">
+          <img src={Star} /> 4.9 (324 reviews)
+        </div>
+      </div>
     </div>
   );
 }
