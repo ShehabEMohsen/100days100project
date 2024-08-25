@@ -1,0 +1,100 @@
+.product-card{
+    background-color: white;
+    width: 30.5rem   ;
+    height: 45rem;
+    border-radius: 1.875rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right:1.5rem ;
+}
+.top-area{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   align-items: center;
+}
+.arrow-button{
+    background-color: #d8d6d6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+    cursor: pointer;
+}
+.arrow-button img{
+    width: 24px;
+    height: 24px;
+}
+.more-info img{
+    width: 24px;
+    height: 24px;
+}
+.more-info{
+    background-color: #d8d6d6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+    cursor: pointer;
+}
+.card-title{
+    font-size: 1.3rem;
+
+}
+.images-slider{
+    margin-top: 3%;
+    width: 100%;
+    height: 70%;
+}
+.images-slider .product-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 1.25rem;
+}
+.product-details{
+    display: flex;
+    margin-top: 5%;
+}
+.interact-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    margin-left: auto;
+}
+.share-button, .save-button{
+    background-color: #d8d6d6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    cursor: pointer;
+}
+.product-name{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.price-reviews{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+.price{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.reviews{
+    font-size: 0.8rem;
+    display: flex;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
