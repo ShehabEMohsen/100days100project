@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Questions from "./components/Questions";
+import PriceCard from "./components/PriceCard";
 
 function App() {
   return (
     <div>
-      <Questions />
+      <PriceCard />
     </div>
   );
 }
