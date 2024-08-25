@@ -6,6 +6,7 @@
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-right:1.5rem ;
+    box-shadow: 1px 2px 20px 20px rgba(0, 0, 0, 0.171);
 }
 .top-area{
     display: flex;
@@ -59,6 +60,7 @@
 .product-details{
     display: flex;
     margin-top: 5%;
+    margin-bottom: 2%;
 }
 .interact-buttons{
     display: flex;
@@ -79,11 +81,15 @@
 .product-name{
     font-size: 1.6rem;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 .price-reviews{
     display: flex;
     justify-content: space-between;
-    margin-top: 8%;
+    margin-top: 5%;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
 }
 .price{
     font-size: 1.4rem;
@@ -97,4 +103,18 @@
     align-items: center;
     justify-content: center;
     font-weight: 300;
+}
+.added-area{
+    height: 11%;
+    width: 95%;
+    background-color: #A6CDDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
