@@ -1,0 +1,182 @@
+.product-card{
+    background-color: white;
+    width: 30.5rem   ;
+    height: 45rem;
+    border-radius: 1.875rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right:1.5rem ;
+    box-shadow: 1px 2px 20px 20px rgba(0, 0, 0, 0.171);
+}
+.top-area{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   align-items: center;
+}
+.arrow-button{
+    background-color: #d8d6d6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+    cursor: pointer;
+}
+.arrow-button img{
+    width: 24px;
+    height: 24px;
+}
+.more-info img{
+    width: 24px;
+    height: 24px;
+}
+.more-info{
+    background-color: #d8d6d6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+    cursor: pointer;
+}
+.card-title{
+    font-size: 1.3rem;
+
+}
+.images-slider{
+    margin-top: 3%;
+    width: 100%;
+    height: 70%;
+}
+.images-slider .product-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 1.25rem;
+}
+.product-details{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.interact-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    margin-left: auto;
+}
+.share-button, .save-button, .done-button{
+    background-color: #d8d6d6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    cursor: pointer;
+}
+.save-button{
+    background-image: url('../assets/mdi_cart-outline.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.done-button{
+    background-image: url('../assets/ic_round-done-outline.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.done-button:hover{
+    background-image: url('../assets/line-md_remove.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.product-name{
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.price-reviews{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+}
+.price{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.reviews{
+    font-size: 0.8rem;
+    display: flex;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+.added-area{
+    height: 11%;
+    width: 95%;
+    background-color: #A6CDDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.snackbar{
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+    background-color: #A6CDDE;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid #a6acde
+}
+.snackbar.show{
+    visibility: visible;
+    animation: slide-up-down 3s ease forwards;
+}
+.snackbar.hide{
+    opacity: 0;
+    transition: visibility 0s, opacity 0,5s ease-in-out;
+}
+@keyframes slide-up-down{
+    0%{
+        opacity: 0;
+        bottom: 0;
+    }
+    10%{
+        opacity: 1;
+        bottom: 40px;
+    }
+    20%{
+        opacity: 1;
+        bottom: 30px;
+
+    }
+    80%{
+        opacity: 1;
+        bottom: 30px;
+    }
+    90%{
+        opacity: 1;
+        bottom:40px;
+    }
+    100%{
+        opacity: 0;
+        bottom: 0;
+    }
+}
