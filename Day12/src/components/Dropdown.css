@@ -1,0 +1,53 @@
+body{
+    color: white;
+    font: 1.2em/1.4 "Oswald", sans-serif;
+    text-align: right;
+}
+.list{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 75rem;
+}
+.list li{
+    padding: 1rem;
+    margin-bottom: 0.925rem;
+    display: block;
+    list-style: none;
+    text-transform: uppercase;
+}
+.list li{
+    visibility: hidden;
+    animation: rolling 1s 1;
+    transform-origin:50% 0 ;
+    animation-fill-mode: forwards;
+}
+.list li:nth-child(2n){
+    background-color: #555;
+}
+.list li:nth-child(2n+1){
+    background-color: #222;
+}
+button{
+    float:right;
+    color: #f3f3f3;
+    background-color: #0f0f0f;
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+@keyframes rolling{
+    0%{
+        visibility: visible;
+        transform: rotateX(180deg) perspective(500px);
+    }
+    70%{
+        visibility: visible;
+        transform: rotateX(-20deg);
+    }
+    100%{
+        visibility: visible;
+        transform: rotateX(0deg);
+    }
+}
