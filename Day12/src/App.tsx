@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Dropdown from "./components/Dropdown";
+import Search from "./components/Search";
 
 function App() {
   return (
     <div>
-      <Dropdown />
+      <Search />
     </div>
   );
 }
