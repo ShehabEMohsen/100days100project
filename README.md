@@ -38,7 +38,10 @@
 
 <img src="assets/ProductCard.png" alt="drawing" style="height:100%"/>
 
-
 ## Day11 (Dropdown menu)
 
 <img src="assets/DropDown.gif" alt="drawing" style="height:100%"/>
+
+## Day12 (Search Bar)
+
+<img src="assets/SearchBar.gif" alt="drawing" style="height:100%"/>
